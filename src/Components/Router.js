@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Home from './Components/Home'
-import Shop from './Components/Shop'
-import Nav from './Components/Nav'
+import Home from './Home'
+import Shop from './Shop'
+import Nav from './Nav'
 
 export default function Router() {
     return (    
@@ -19,6 +19,5 @@ export default function Router() {
                 />
             </Switch>
         </BrowserRouter>
-    
     )
 }

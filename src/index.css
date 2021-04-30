@@ -16,6 +16,12 @@ li{
     color: whitesmoke;
 }
 
+img{
+    height: 100px;
+}
+
 .item_div{
     background-color: rgb(243, 219, 219);
+    display: flex;
+    justify-content: space-between;
 }
