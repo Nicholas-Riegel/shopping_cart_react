@@ -5,12 +5,12 @@ nav{
     color: whitesmoke;
 }
 
-ul{
+nav ul{
     list-style: none;
     display: flex;
 }
 
-li{
+nav li{
     width: 80px;
     text-decoration: none;
     color: whitesmoke;

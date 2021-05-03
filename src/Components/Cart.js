@@ -1,14 +1,16 @@
-import {useContext} from 'react'
-import { ProductsContext } from './ProductsContext'
+import { useContext } from 'react'
+import {ProductsContext} from './ProductsContext'
 
-export default function Shop() {
-    
+export default function Cart() {
+
     const [items, setItems] = useContext(ProductsContext)
-    
+
+    const cartList = items.filter(x => x.count > 0)
+
     return (
         <div>
-            <h1>This is the Shopping page</h1>
-            {items.map(x =>(
+            <h1>Cart Page</h1>
+            {cartList.map(x =>(
                 <div key={x.id} className='item_div'>
                     <h3>{x.title}</h3>
                     <img src={x.image} alt={x.title}/>
