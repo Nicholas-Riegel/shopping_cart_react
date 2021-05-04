@@ -1,27 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 nav{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     background-color: rgb(133, 133, 216);
     color: whitesmoke;
+    min-height: 60px;
 }
 
 nav ul{
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 nav li{
-    width: 80px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
     text-decoration: none;
     color: whitesmoke;
+    font-size: 25px;
+    /* border: red solid 1px; */
 }
 
+nav a{
+    text-decoration: none;
+}
 img{
-    height: 100px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+button{
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+}
+
+.home_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fproperty-hubz.com%2Fuae%2Fwp-content%2Fuploads%2F2018%2F05%2Fmodern-interiors-4k-hd-wallpapers-sea-view-simple-living-room-decorate-design-idea_how-to-design-living-room_dining-room-ideas-contemporary-pics-indoor-design-area-large-sets-home-inte.jpg&f=1&nofb=1');
+    background-size: cover;
+    color: rgba(152, 154, 231, 0.863);
+    font-size: 60px;
 }
 
 .item_div{
-    background-color: rgb(243, 219, 219);
+    /* background-color: ; */
     display: flex;
     justify-content: space-between;
+    margin: 20px 10%;
+    border-radius: 10px;
+    border: gray solid 1px;
+}
+
+.buttons_div{
+    display: flex;
+    /* border: red solid 1px; */
+    width: 33%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price_add{
+    /* border: red solid 1px; */
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrap_price_divs{
+    /* border: green solid 1px; */
+    display: flex;
+    width: 40%;
+}
+
+.title_div{
+    display: flex;
+    flex-direction: column;
+    /* border: red solid 1px; */
+    align-items: center;
+    width: 40%;
+    padding: 20px;
+}
+
+.cart_div h1{
+    text-align: center;
+    margin-top: 20px;
 }
