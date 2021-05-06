@@ -1,8 +1,8 @@
 import { useState, createContext, useEffect } from 'react'
 
-export const ProductsContext = createContext()
+export const Context = createContext()
 
-export const ProductsProvider = (x) => {
+export const ContextFunction = (x) => {
 
     const [items, setItems] = useState([])
 
@@ -16,8 +16,8 @@ export const ProductsProvider = (x) => {
     )
 
     return (
-        <ProductsContext.Provider value={[items, setItems]}>
+        <Context.Provider value={[items, setItems]}>
             {x.children}
-        </ProductsContext.Provider>
+        </Context.Provider>
     )
 }

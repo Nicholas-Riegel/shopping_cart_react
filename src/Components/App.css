@@ -4,9 +4,16 @@
     padding: 0;
 }
 
+body{
+    padding-top: 60px;
+}
+
 nav{
     display: flex;
-    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(133, 133, 216);
     color: whitesmoke;
@@ -17,27 +24,40 @@ nav ul{
     list-style: none;
     display: flex;
     align-items: center;
+    /* height: 100%; */
 }
 
 nav li{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 200px;
     text-decoration: none;
     color: whitesmoke;
     font-size: 25px;
     /* border: red solid 1px; */
+    height: 60px;
+}
+
+nav li.active {
+    background-color: rgb(89, 67, 141);
 }
 
 nav a{
     text-decoration: none;
 }
-img{
+
+.title_div img{
     height: 200px;
     margin-top: 30px;
 }
 
-button{
+img{
+    height: 100px;
+    margin: 10px 0;
+}
+
+.buttons_div button{
     height: 30px;
     width: 30px;
     font-size: 18px;
@@ -47,10 +67,12 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    /* margin-top: 60px; */
+    height: 93vh;
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fproperty-hubz.com%2Fuae%2Fwp-content%2Fuploads%2F2018%2F05%2Fmodern-interiors-4k-hd-wallpapers-sea-view-simple-living-room-decorate-design-idea_how-to-design-living-room_dining-room-ideas-contemporary-pics-indoor-design-area-large-sets-home-inte.jpg&f=1&nofb=1');
     background-size: cover;
-    color: rgba(152, 154, 231, 0.863);
+    /* color: rgba(152, 154, 231, 0.863); */
+    color:  rgb(89, 67, 141);
     font-size: 60px;
 }
 
@@ -58,22 +80,34 @@ button{
     /* background-color: ; */
     display: flex;
     justify-content: space-between;
-    margin: 20px 10%;
-    border-radius: 10px;
+    margin: 10px 10%;
+    border-radius: 15px;
     border: gray solid 1px;
+    background-color: white;
+}
+
+.item_cart_div{
+    /* background-color: ; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10%;
+    border-radius: 15px;
+    border: gray solid 1px;
+    background-color: white;
+    width: 55%;
 }
 
 .buttons_div{
     display: flex;
     /* border: red solid 1px; */
-    width: 33%;
+    width: 45%;
     justify-content: space-around;
     align-items: center;
 }
 
 .price_add{
     /* border: red solid 1px; */
-    width: 33%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,7 +116,7 @@ button{
 .wrap_price_divs{
     /* border: green solid 1px; */
     display: flex;
-    width: 40%;
+    width: 50%;
 }
 
 .title_div{
@@ -97,4 +131,39 @@ button{
 .cart_div h1{
     text-align: center;
     margin-top: 20px;
+}
+
+.shop_div{
+    background-color: rgb(176, 176, 240);
+    padding: 20px;
+    /* margin-top: 60px; */
+}
+
+.cart_div{
+    background-color: rgb(176, 176, 240);
+    padding: 20px;
+    min-height: 100vh;
+    /* margin-top: 60px; */
+}
+
+.checkout_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    left: 68%;
+    background-color: white;
+    border: gray solid 1px;
+    border-radius: 15px;
+    width: 20%;
+    height: 400px;
+}
+
+.checkout_div button{
+    margin: 20px 0;
+    width: 40%;
+    height: 40px;
+    font-size: large;
 }
