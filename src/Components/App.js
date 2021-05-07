@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
 
 import { ContextFunction, Context } from './Context'
