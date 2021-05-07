@@ -22,7 +22,7 @@ const Home = () => {
 
 const App = () => (
     <ContextFunction>
-        <Router basename='/'>
+        <Router basename={process.env.PUBLIC_URL}>
             <Nav />
             <Switch>
                 <Route exact path='/' component={Home} />
