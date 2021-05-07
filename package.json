@@ -2,7 +2,7 @@
   "name": "shopping-cart-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Nicholas-Riegel/github.io/shopping_cart_react",
+  "homepage": "https://nicholas-riegel.github.io/shopping_cart_react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
