@@ -17,7 +17,7 @@ const Nav = () => {
         <nav>
             <h3 style={{ marginLeft: '80px', fontSize: '30px'}}>The Home Shop</h3>
             <ul>
-                <Link to=''>
+                <Link to='/'>
                     <li
                         className={active === 1 ? 'active' : ''}
                         onClick={()=>handleActive(1)}
