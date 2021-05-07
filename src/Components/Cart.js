@@ -1,11 +1,20 @@
-import { useContext, useLayoutEffect} from 'react'
+import { useContext, useLayoutEffect, useEffect} from 'react'
 import { Context } from './Context'
 
 const Cart = () => {
 
-    const [items, setItems] = useContext(Context)
+    const {products, tabs} = useContext(Context)
+    const [items, setItems] = products
+    const [active, setActive] = tabs
 
     const cartList = items.filter(x => x.count > 0)
+
+    useEffect(
+        () => {
+            setActive(3)        
+        },
+        []
+    )
 
     useLayoutEffect(() => {
             window.scrollTo(0, 0)

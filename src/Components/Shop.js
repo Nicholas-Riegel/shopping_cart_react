@@ -1,10 +1,19 @@
-import { useContext, useLayoutEffect } from 'react'
+import { useContext, useLayoutEffect, useEffect } from 'react'
 import { Context } from './Context'
 
 const Shop = () => {
     
-    const [items, setItems] = useContext(Context)
+    const {products, tabs} = useContext(Context)
+    const [items, setItems] = products
+    const [active, setActive] = tabs
     
+    useEffect(
+        () => {
+            setActive(2)        
+        },
+        []
+    )
+
     useLayoutEffect(() => {
             window.scrollTo(0, 0)
         },

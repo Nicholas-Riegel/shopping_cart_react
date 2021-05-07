@@ -5,6 +5,7 @@ export const Context = createContext()
 export const ContextFunction = (x) => {
 
     const [items, setItems] = useState([])
+    const [active, setActive] = useState(0)
 
     useEffect(
         () => {
@@ -16,7 +17,7 @@ export const ContextFunction = (x) => {
     )
 
     return (
-        <Context.Provider value={[items, setItems]}>
+        <Context.Provider value={{ products: [items, setItems], tabs: [active, setActive]}}>
             {x.children}
         </Context.Provider>
     )

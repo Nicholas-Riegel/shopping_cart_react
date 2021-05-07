@@ -1,12 +1,13 @@
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Context } from './Context'
 
 const Nav = () => {
 
-    const [items] = useContext(Context)
-    const [active, setActive] = useState(1)
+    const {products, tabs} = useContext(Context)
+    const [items] = products
+    const [active, setActive] = tabs
 
     const handleActive = (x) => {
         setActive(x)
@@ -34,7 +35,14 @@ const Nav = () => {
                     <li 
                         className={active === 3 ? 'active' : ''} 
                         onClick={()=>handleActive(3)}
-                    >Cart<span style={{color: 'black', fontSize: '15px', marginLeft: '5px'}}>{count > 0 ? ` (${count})` : null}</span></li>
+                    >Cart
+                        <span style={{
+                            color: 'black',
+                            fontSize: '15px',
+                            marginLeft: '5px'
+                        }}
+                        >{count > 0 ? `(${count})` : null}</span>
+                    </li>
                 </Link>
             </ul>
         </nav>
