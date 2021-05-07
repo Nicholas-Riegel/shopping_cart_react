@@ -7,18 +7,9 @@ const Shop = () => {
     const [items, setItems] = products
     const [active, setActive] = tabs
     
-    useEffect(
-        () => {
-            setActive(2)        
-        },
-        []
-    )
+    useEffect(() => setActive(2), [])
 
-    useLayoutEffect(() => {
-            window.scrollTo(0, 0)
-        },
-        []
-    )
+    useLayoutEffect(() => window.scrollTo(0, 0), [])
 
     return (
         <div className='shop_div'>

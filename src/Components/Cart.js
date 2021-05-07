@@ -9,18 +9,9 @@ const Cart = () => {
 
     const cartList = items.filter(x => x.count > 0)
 
-    useEffect(
-        () => {
-            setActive(3)        
-        },
-        []
-    )
+    useEffect(() => setActive(3), [])
 
-    useLayoutEffect(() => {
-            window.scrollTo(0, 0)
-        },
-        []
-    )
+    useLayoutEffect(() => window.scrollTo(0, 0), [])
 
     return (
         <div className='cart_div'>

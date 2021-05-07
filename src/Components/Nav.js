@@ -9,9 +9,7 @@ const Nav = () => {
     const [items] = products
     const [active, setActive] = tabs
 
-    const handleActive = (x) => {
-        setActive(x)
-    }
+    const handleActive = (x) => setActive(x)
 
     const count = items.filter(x=>x.count > 0).reduce((sum, x)=>sum + x.count, 0)
     

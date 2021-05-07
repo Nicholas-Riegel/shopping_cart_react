@@ -17,7 +17,10 @@ export const ContextFunction = (x) => {
     )
 
     return (
-        <Context.Provider value={{ products: [items, setItems], tabs: [active, setActive]}}>
+        <Context.Provider value={{
+            products: [items, setItems],
+            tabs: [active, setActive]
+        }}>
             {x.children}
         </Context.Provider>
     )

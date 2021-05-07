@@ -11,12 +11,7 @@ const Home = () => {
     const {tabs} = useContext(Context)
     const [active, setActive] = tabs
 
-    useEffect(
-        () => {
-            setActive(1)        
-        },
-        []
-    )
+    useEffect(() => setActive(1), [])
     
     return (
         <div className='home_div'>
@@ -33,6 +28,7 @@ const App = () => (
                 <Route path='/' exact component={Home} />
                 <Route path='/shop' component={Shop} />
                 <Route path='/cart' component={Cart} />
+                <Route path="*" component={Home} />
             </Switch>
         </Router>
     </ContextFunction>
