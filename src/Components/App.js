@@ -1,4 +1,4 @@
-import { HashRouter as Router, hashHistory, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
 
 import { ContextFunction, Context } from './Context'
@@ -25,7 +25,7 @@ const App = () => (
         <Router basename='/'>
             <Nav />
             <Switch>
-                <Route path='/' exact component={Home} />
+                <Route exact path='/' component={Home} />
                 <Route path='/shop' component={Shop} />
                 <Route path='/cart' component={Cart} />
                 <Route path="*" component={Home} />
