@@ -6,15 +6,15 @@ Technologies:
 
 React:
 
-Hooks: useState, useEffect, useContext, useLayoutEffect
+1. Hooks: useState, useEffect, useContext, useLayoutEffect
 createContext
-Router: BrowserRouter, Switch, Route, exact path
+2. Router: BrowserRouter, Switch, Route, exact path
 
 JS:
 
-Methods: .map, .filter, .reduce, .toFixed
-ternary operators
-fetch()
+1. Methods: .map, .filter, .reduce, .toFixed 
+2. ternary operators
+3. fetch()
 
 Things I learned:
 
@@ -24,3 +24,5 @@ Things I learned:
 4. Setting Context with more than one state
 5. useLayoutEffect
 6. Making tabs active based on click (in Nav) and page loaded (for reload with useEffect)
+
+App may be viewed on github pages: https://nicholas-riegel.github.io/shopping_cart_react/#/
